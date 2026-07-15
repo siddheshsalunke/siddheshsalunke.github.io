@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 210" role="img" aria-label="NVIDIA Certified Associate, AI Infrastructure and Operations">
+  <defs>
+    <clipPath id="nvHex">
+      <polygon points="100,4 190,40 190,150 100,206 10,150 10,40"/>
+    </clipPath>
+  </defs>
+
+  <!-- hex body -->
+  <g clip-path="url(#nvHex)">
+    <!-- white upper -->
+    <rect x="0" y="0" width="200" height="210" fill="#ffffff"/>
+    <!-- green bottom section -->
+    <rect x="0" y="120" width="200" height="90" fill="#76b900"/>
+    <!-- dark middle band -->
+    <rect x="0" y="66" width="200" height="56" fill="#2e2e2e"/>
+  </g>
+  <!-- green hex outline accent -->
+  <polygon points="100,4 190,40 190,150 100,206 10,150 10,40" fill="none" stroke="#76b900" stroke-width="7"/>
+
+  <!-- NVIDIA eye logo -->
+  <g transform="translate(100,34)">
+    <rect x="-17" y="-15" width="34" height="30" rx="2" fill="#76b900"/>
+    <!-- stylized eye (simplified spiral) -->
+    <path d="M -9 0 A 9 9 0 1 1 9 0 A 6 6 0 1 0 -3 0 A 3 3 0 1 1 3 0"
+          fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/>
+    <circle cx="-6.5" cy="0" r="2.3" fill="#ffffff"/>
+  </g>
+  <!-- NVIDIA wordmark -->
+  <text x="100" y="60" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="16" font-weight="900" fill="#111111" letter-spacing="0.5">NVIDIA</text>
+
+  <!-- Certified / Associate -->
+  <text x="100" y="86" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#ffffff" letter-spacing="0.4">Certified</text>
+  <text x="100" y="110" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="19" font-weight="900" fill="#ffffff" letter-spacing="0.3">Associate</text>
+
+  <!-- AI Infrastructure and Operations -->
+  <text x="100" y="152" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="700" fill="#1c1c1c">AI Infrastructure</text>
+  <text x="100" y="170" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="700" fill="#1c1c1c">and Operations</text>
+</svg>

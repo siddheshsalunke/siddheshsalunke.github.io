@@ -28,6 +28,7 @@
       <nav class="nav" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#patent">Patent</a>
+        <a href="#featured">Featured</a>
         <a href="#stack">Stack</a>
         <a href="#experience">Experience</a>
         <a href="#work">Work</a>
@@ -43,7 +44,24 @@
 
     <section class="hero">
       <div class="hero__grid"></div>
+
       <div class="hero__inner">
+        <!-- Certification badge cluster (top-left of content) -->
+        <aside class="certs" aria-label="Current certifications">
+          <span class="certs__eyebrow">Currently certified</span>
+          <div class="certs__cluster">
+            <a class="cert cert--gcp" href="#experience" title="Google Cloud Certified — Generative AI Leader (2026)">
+              <img src="assets/gcp-genai.svg" alt="Google Cloud Certified Generative AI Leader" loading="lazy" />
+            </a>
+            <a class="cert cert--nvidia" href="#experience" title="NVIDIA Certified Associate — AI Infrastructure & Operations (2026)">
+              <img src="assets/nvidia-assoc.svg" alt="NVIDIA Certified Associate, AI Infrastructure and Operations" loading="lazy" />
+            </a>
+            <a class="cert cert--safe" href="#experience" title="Certified SAFe 6 Practitioner">
+              <img src="assets/safe6.svg" alt="Certified SAFe 6 Practitioner" loading="lazy" />
+            </a>
+          </div>
+        </aside>
+
         <div class="hero__meta">
           <span class="ind ind--live"></span>
           <span>Somerset, NJ</span>
@@ -164,6 +182,7 @@
   <span class="t-key">"based"</span>:        <span class="t-str">"Somerset, NJ"</span>,
   <span class="t-key">"focus"</span>:        <span class="t-arr">[</span><span class="t-str">"HPC"</span>, <span class="t-str">"AI"</span>, <span class="t-str">"Data"</span>, <span class="t-str">"Cloud"</span><span class="t-arr">]</span>,
   <span class="t-key">"patent"</span>:       <span class="t-str">"US 12,254,347 B2"</span>,
+  <span class="t-key">"certs"</span>:        <span class="t-arr">[</span><span class="t-str">"GCP GenAI Leader"</span>, <span class="t-str">"NVIDIA AI Infra"</span>, <span class="t-str">"SAFe 6"</span>, <span class="t-str">"AWS SA"</span><span class="t-arr">]</span>,
   <span class="t-key">"users_served"</span>: <span class="t-str">"2000+ scientists"</span>,
   <span class="t-key">"data_scale"</span>:   <span class="t-str">"25+ PB"</span>,
   <span class="t-key">"status"</span>:       <span class="t-str">"shipping..."</span>
@@ -307,9 +326,131 @@
       </article>
     </section>
 
-    <section class="section" id="stack">
+    <!-- ============= FEATURED / PRESS ============= -->
+    <section class="section section--press" id="featured">
+      <div class="press-bg" aria-hidden="true"></div>
+
       <div class="section__index">
         <span>No. 03</span>
+        <span class="section__rule"></span>
+        <span>Featured</span>
+      </div>
+
+      <h2 class="h-display">In the <em>press.</em></h2>
+      <p class="section__lede">
+        Selected work highlighted beyond Regeneron&rsquo;s walls.
+      </p>
+
+      <article class="press">
+        <div class="press__glow" aria-hidden="true"></div>
+
+        <div class="press__grid">
+          <!-- LEFT: editorial content -->
+          <div class="press__content">
+            <div class="press__tag">
+              <span class="press__source">Posit</span>
+              <span class="press__kind">Customer Story · 2026</span>
+            </div>
+
+            <a class="press__title-link" href="https://posit.co/about/customer-stories/regeneron-watchtowR" target="_blank" rel="noopener">
+              <h3 class="press__title">
+                How Regeneron built <span class="press__hl">WatchtowR</span> for reliable
+                scientific&nbsp;computing observability
+              </h3>
+            </a>
+
+            <p class="press__dek">
+              Posit (formerly RStudio) published a customer story on WatchtowR — a Shiny
+              application on Posit Connect that my Scientific Computation team built to unify
+              observability across seven Posit environments on AWS. It pulls live metrics from
+              the Posit APIs and AWS into a single command center.
+            </p>
+
+            <blockquote class="press__quote">
+              <span class="press__quote-mark" aria-hidden="true">&ldquo;</span>
+              <p>
+                Digitalizing the experience isn&rsquo;t about dashboards or new tools, it&rsquo;s
+                about getting better decisions in front of the people advancing the science,
+                faster. WatchtowR does exactly that for our scientific computing platform, and
+                it&rsquo;s becoming a template for how we modernize the rest of the stack.
+              </p>
+              <footer>
+                <span class="press__quote-name">Siddhesh Salunke</span>
+                <span class="press__quote-role">Tech Lead, HPC Engineering &amp; Operations · in the Posit customer story</span>
+              </footer>
+            </blockquote>
+
+            <a class="press__cta" href="https://posit.co/about/customer-stories/regeneron-watchtowR" target="_blank" rel="noopener">
+              Read the full story on Posit <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <!-- RIGHT: mock WatchtowR command center -->
+          <div class="press__visual">
+            <div class="wt" role="img" aria-label="Illustrative WatchtowR observability dashboard">
+              <div class="wt__chrome">
+                <span class="wt__dot"></span><span class="wt__dot"></span><span class="wt__dot"></span>
+                <span class="wt__title">WatchtowR · command center</span>
+                <span class="wt__live"><span class="wt__pulse"></span>live</span>
+              </div>
+
+              <div class="wt__body">
+                <div class="wt__row">
+                  <div class="wt__stat">
+                    <span class="wt__stat-label">License audit</span>
+                    <span class="wt__stat-num" data-count="22" data-suffix="h → sec">22h → sec</span>
+                  </div>
+                  <div class="wt__stat">
+                    <span class="wt__stat-label">Environments</span>
+                    <span class="wt__stat-num" data-count="7" data-suffix="">7</span>
+                  </div>
+                  <div class="wt__stat">
+                    <span class="wt__stat-label">Scientists</span>
+                    <span class="wt__stat-num" data-count="100" data-suffix="s+">100s+</span>
+                  </div>
+                </div>
+
+                <!-- bar chart: utilization across environments -->
+                <div class="wt__panel">
+                  <span class="wt__panel-label">CPU / memory utilization · 7 AWS-hosted Posit deployments</span>
+                  <div class="wt__bars">
+                    <span style="--h:62%"></span>
+                    <span style="--h:80%"></span>
+                    <span style="--h:47%"></span>
+                    <span style="--h:91%"></span>
+                    <span style="--h:68%"></span>
+                    <span style="--h:55%"></span>
+                    <span style="--h:73%"></span>
+                  </div>
+                </div>
+
+                <!-- IDE adoption legend -->
+                <div class="wt__panel">
+                  <span class="wt__panel-label">IDE adoption</span>
+                  <div class="wt__legend">
+                    <span><i style="--c:var(--cyan)"></i>RStudio</span>
+                    <span><i style="--c:#a78bfa"></i>Positron</span>
+                    <span><i style="--c:var(--amber)"></i>Jupyter</span>
+                    <span><i style="--c:var(--green)"></i>VS&nbsp;Code</span>
+                  </div>
+                  <div class="wt__track">
+                    <i style="--w:42%;--c:var(--cyan)"></i>
+                    <i style="--w:26%;--c:#a78bfa"></i>
+                    <i style="--w:19%;--c:var(--amber)"></i>
+                    <i style="--w:13%;--c:var(--green)"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="press__visual-note">Illustrative — not the actual dashboard</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section" id="stack">
+      <div class="section__index">
+        <span>No. 04</span>
         <span class="section__rule"></span>
         <span>Stack</span>
       </div>
@@ -346,6 +487,7 @@
             <li>AWS ParallelCluster / CfnCluster</li>
             <li>Slurm &amp; SGE</li>
             <li>FSx Lustre</li>
+            <li>Seqera Platform (Nextflow)</li>
             <li>Posit Workbench / Connect</li>
             <li>Enterprise JupyterHub</li>
           </ul>
@@ -365,7 +507,7 @@
 
     <section class="section" id="experience">
       <div class="section__index">
-        <span>No. 04</span>
+        <span>No. 05</span>
         <span class="section__rule"></span>
         <span>Experience</span>
       </div>
@@ -499,10 +641,11 @@
           <li><strong>M.S.</strong> · Management Information Systems · Pace University</li>
           <li><strong>B.E.</strong> · Electrical, Electronics &amp; Communications · PVPPCOE, Mumbai</li>
           <li><strong>USPTO</strong> · Co-inventor, US 12,254,347 B2 (HPC Data Pipeline)</li>
+          <li><strong>Google Cloud</strong> · Certified Generative AI Leader <span>(2026)</span></li>
+          <li><strong>NVIDIA</strong> · Certified Associate — AI Infrastructure &amp; Operations <span>(2026)</span></li>
           <li><strong>Certified SAFe&reg; 6</strong> · Practitioner</li>
           <li><strong>AWS</strong> · Certified Solutions Architect</li>
-          <li><strong>NVIDIA</strong> · AI Infrastructure &amp; Operations Fundamentals</li>
-          <li><strong>Red Hat</strong> · Ansible Essentials · Linux Command Line Basics</li>
+          <li><strong>Courses</strong> · Ansible Essentials · Linux Command Line · Intro to R · DevOps CI/CD on AWS</li>
           <li><strong>Honors</strong> · International Graduate Scholarship Recipient</li>
         </ul>
       </div>
@@ -510,7 +653,7 @@
 
     <section class="section" id="work">
       <div class="section__index">
-        <span>No. 05</span>
+        <span>No. 06</span>
         <span class="section__rule"></span>
         <span>Selected Work</span>
       </div>
@@ -534,6 +677,26 @@
             <li>AWS</li><li>Lambda</li><li>DataSync</li><li>FSx Lustre</li><li>Airflow</li>
           </ul>
           <a class="work__link" href="https://patents.google.com/patent/US12254347B2" target="_blank" rel="noopener">Patent on Google Patents ↗</a>
+        </article>
+
+        <article class="work__card work__card--lg">
+          <header>
+            <span class="work__tag">Featured by Posit · Production</span>
+            <h3>WatchtowR — Observability for Scientific Computing</h3>
+          </header>
+          <p>
+            A Shiny application on Posit Connect that unifies observability across seven Posit
+            environments on AWS, pulling live metrics from the Posit APIs and AWS into a single
+            interactive command center. It tracks license utilization, CPU and memory
+            consumption, deployment health, and IDE adoption — cutting a 22-hour manual license
+            audit to seconds and giving engineering leaders the evidence to make confident
+            infrastructure decisions. Built by my Scientific Computation team and published as a
+            Posit customer story.
+          </p>
+          <ul class="chips">
+            <li>Shiny</li><li>Posit Connect</li><li>R</li><li>AWS</li><li>Observability</li><li>MCP (next)</li>
+          </ul>
+          <a class="work__link" href="https://posit.co/about/customer-stories/regeneron-watchtowR" target="_blank" rel="noopener">Read the Posit customer story ↗</a>
         </article>
 
         <article class="work__card">
@@ -600,7 +763,7 @@
 
     <section class="section section--contact" id="contact">
       <div class="section__index">
-        <span>No. 06</span>
+        <span>No. 07</span>
         <span class="section__rule"></span>
         <span>Contact</span>
       </div>
