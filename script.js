@@ -48,7 +48,7 @@
 
   // ---------- Reveal on scroll ----------
   const targets = document.querySelectorAll(
-    '.section, .work__card, .timeline__item, .metric, .contact__link, .press'
+    '.section, .work__card, .timeline__item, .metric, .contact__link, .press, .pub, .talk, .poster, .shot'
   );
   targets.forEach((t) => t.classList.add('reveal'));
 

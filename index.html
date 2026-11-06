@@ -28,7 +28,8 @@
       <nav class="nav" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#patent">Patent</a>
-        <a href="#featured">Featured</a>
+        <a href="#featured">Press</a>
+        <a href="#speaking">Speaking</a>
         <a href="#stack">Stack</a>
         <a href="#experience">Experience</a>
         <a href="#work">Work</a>
@@ -58,6 +59,13 @@
             </a>
             <a class="cert cert--safe" href="#experience" title="Certified SAFe 6 Practitioner">
               <img src="assets/safe6.svg" alt="Certified SAFe 6 Practitioner" loading="lazy" />
+            </a>
+            <span class="certs__plus" aria-hidden="true">+</span>
+            <a class="cert cert--sm" href="#experience" title="Hello Nextflow — Nextflow Training Week 2026 (Seqera)">
+              <img src="assets/nextflow.svg" alt="Hello Nextflow certificate, Seqera" loading="lazy" />
+            </a>
+            <a class="cert cert--sm" href="#experience" title="Posit Academy — Admin Training completion">
+              <img src="assets/posit.svg" alt="Posit Academy Admin Training completion" loading="lazy" />
             </a>
           </div>
         </aside>
@@ -333,7 +341,7 @@
       <div class="section__index">
         <span>No. 03</span>
         <span class="section__rule"></span>
-        <span>Featured</span>
+        <span>Press &amp; Writing</span>
       </div>
 
       <h2 class="h-display">In the <em>press.</em></h2>
@@ -446,11 +454,100 @@
           </div>
         </div>
       </article>
+
+      <!-- AWS HPC Blog — second press item -->
+      <a class="pub" href="https://aws.amazon.com/blogs/hpc/how-regeneron-built-a-multi-executor-omics-platform-with-intelligent-resource-management-on-aws/" target="_blank" rel="noopener">
+        <div class="pub__left">
+          <div class="pub__tag">
+            <span class="pub__source">AWS HPC Blog</span>
+            <span class="pub__kind">Lead author · Nov 2026</span>
+          </div>
+          <h3 class="pub__title">
+            How Regeneron built a <span class="pub__hl">multi-executor Omics platform</span>
+            with intelligent resource management on AWS
+          </h3>
+          <p class="pub__dek">
+            A technical deep-dive, co-authored with AWS, on the genomics platform that processes
+            thousands of samples a week. It routes each Nextflow process to the best-fit backend —
+            SLURM on ParallelCluster, AWS Batch, or EKS — over a shared FSx for Lustre layer, with an
+            ML resource manager (&ldquo;Haizi Bot&rdquo;) right-sizing every sample.
+          </p>
+          <div class="pub__chips">
+            <span>Nextflow</span><span>ParallelCluster</span><span>AWS Batch</span><span>EKS</span><span>FSx Lustre</span><span>nf-core/atacseq</span>
+          </div>
+          <span class="pub__cta">Read on the AWS HPC Blog <span aria-hidden="true">↗</span></span>
+        </div>
+        <div class="pub__right">
+          <div class="pub__metric"><span class="pub__num">1 → 1,000</span><span class="pub__lbl">nodes, auto-scaled</span></div>
+          <div class="pub__metric"><span class="pub__num">up to 60%</span><span class="pub__lbl">cost reduction*</span></div>
+          <div class="pub__metric"><span class="pub__num">30%</span><span class="pub__lbl">faster completion*</span></div>
+          <div class="pub__metric"><span class="pub__num">95%</span><span class="pub__lbl">cost-prediction accuracy*</span></div>
+          <span class="pub__foot">*Regeneron internal benchmarks</span>
+        </div>
+      </a>
+    </section>
+
+    <!-- ============= SPEAKING ============= -->
+    <section class="section section--speaking" id="speaking">
+      <div class="section__index">
+        <span>No. 04</span>
+        <span class="section__rule"></span>
+        <span>Speaking</span>
+      </div>
+
+      <h2 class="h-display">On the <em>stage.</em></h2>
+      <p class="section__lede">
+        Sharing how scientific platforms get built — for speed, scale, and reproducibility.
+      </p>
+
+      <article class="talk">
+        <div class="talk__head">
+          <div class="talk__meta">
+            <span class="talk__badge">Invited Talk</span>
+            <span class="talk__venue">AI Drug Discovery &amp; Development Summit · Boston · 2026</span>
+          </div>
+          <h3 class="talk__title">From Infrastructure to Enablement</h3>
+          <p class="talk__sub">Designing scientific platforms for speed, scale and reproducibility</p>
+        </div>
+
+        <div class="talk__gallery">
+          <figure class="shot shot--wide">
+            <img src="assets/aiddd-stage.jpg" alt="Siddhesh Salunke presenting at the AI Drug Discovery & Development Summit" loading="lazy" />
+            <figcaption>Delivering the keynote session</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/aiddd-slide.jpg" alt="Title slide: From Infrastructure to Enablement, Regeneron" loading="lazy" />
+            <figcaption>&ldquo;From Infrastructure to Enablement&rdquo;</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/aiddd-interview.jpg" alt="On-camera interview at the summit" loading="lazy" />
+            <figcaption>On-camera interview at the summit</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <!-- Poster Day -->
+      <article class="poster">
+        <div class="poster__frame">
+          <div class="poster__hazy" aria-hidden="true"></div>
+          <div class="poster__scrim" aria-hidden="true"></div>
+          <div class="poster__overlay">
+            <span class="poster__eyebrow">D&amp;T Poster Day · 2026</span>
+            <h3 class="poster__title">Powering Biomarker Analysis Using Databricks &amp; RShiny</h3>
+            <p class="poster__meta">Biomarker360 (OSGDE) · a GD&nbsp;DT + EDDA collaboration</p>
+            <span class="poster__lock">● Internal poster — details redacted</span>
+          </div>
+        </div>
+        <p class="poster__note">
+          Presented at Regeneron&rsquo;s Global Development Poster Day. The full poster is internal;
+          shown here as a redacted preview with the title in the clear.
+        </p>
+      </article>
     </section>
 
     <section class="section" id="stack">
       <div class="section__index">
-        <span>No. 04</span>
+        <span>No. 05</span>
         <span class="section__rule"></span>
         <span>Stack</span>
       </div>
@@ -507,7 +604,7 @@
 
     <section class="section" id="experience">
       <div class="section__index">
-        <span>No. 05</span>
+        <span>No. 06</span>
         <span class="section__rule"></span>
         <span>Experience</span>
       </div>
@@ -644,7 +741,9 @@
           <li><strong>Google Cloud</strong> · Certified Generative AI Leader <span>(2026)</span></li>
           <li><strong>NVIDIA</strong> · Certified Associate — AI Infrastructure &amp; Operations <span>(2026)</span></li>
           <li><strong>Certified SAFe&reg; 6</strong> · Practitioner</li>
-          <li><strong>AWS</strong> · Certified Solutions Architect(2016-2019)</li>
+          <li><strong>AWS</strong> · Certified Solutions Architect</li>
+          <li><strong>Seqera</strong> · Hello Nextflow — Nextflow Training Week <span>(2026)</span></li>
+          <li><strong>Posit Academy</strong> · Admin Training completion <span>(2026)</span></li>
           <li><strong>Courses</strong> · Ansible Essentials · Linux Command Line · Intro to R · DevOps CI/CD on AWS</li>
           <li><strong>Honors</strong> · International Graduate Scholarship Recipient</li>
         </ul>
@@ -653,7 +752,7 @@
 
     <section class="section" id="work">
       <div class="section__index">
-        <span>No. 06</span>
+        <span>No. 07</span>
         <span class="section__rule"></span>
         <span>Selected Work</span>
       </div>
@@ -697,6 +796,23 @@
             <li>Shiny</li><li>Posit Connect</li><li>R</li><li>AWS</li><li>Observability</li><li>MCP (next)</li>
           </ul>
           <a class="work__link" href="https://posit.co/about/customer-stories/regeneron-watchtowR" target="_blank" rel="noopener">Read the Posit customer story ↗</a>
+        </article>
+
+        <article class="work__card">
+          <header>
+            <span class="work__tag">Published · AWS HPC Blog</span>
+            <h3>Multi-executor Omics platform</h3>
+          </header>
+          <p>
+            A Nextflow genomics platform that processes thousands of samples a week, routing each
+            process to the best-fit backend — SLURM on ParallelCluster, AWS Batch, or EKS — over
+            shared FSx for Lustre, with an ML resource manager right-sizing every sample. Scales
+            1 to 1,000 nodes. Co-authored as the lead author on the AWS HPC Blog.
+          </p>
+          <ul class="chips">
+            <li>Nextflow</li><li>ParallelCluster</li><li>EKS</li><li>FSx Lustre</li><li>nf-core</li>
+          </ul>
+          <a class="work__link" href="https://aws.amazon.com/blogs/hpc/how-regeneron-built-a-multi-executor-omics-platform-with-intelligent-resource-management-on-aws/" target="_blank" rel="noopener">Read on the AWS HPC Blog ↗</a>
         </article>
 
         <article class="work__card">
@@ -763,13 +879,13 @@
 
     <section class="section section--contact" id="contact">
       <div class="section__index">
-        <span>No. 07</span>
+        <span>No. 08</span>
         <span class="section__rule"></span>
         <span>Contact</span>
       </div>
 
       <h2 class="h-display contact__h">
-        Let&rsquo;s build the <em>Solutions</em> that lets the interesting work happen.
+        Let&rsquo;s build the <em>infrastructure</em> that lets the interesting work happen.
       </h2>
 
       <p class="contact__lede">
