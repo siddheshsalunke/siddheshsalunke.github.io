@@ -1339,6 +1339,37 @@ img, svg { max-width: 100%; display: block; }
   }
 }
 
+
+/* ---------- Open source ---------- */
+.oss { margin-top: 56px; }
+.oss__head { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+.oss__label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green); }
+.oss__rule { flex: 1; height: 1px; background: var(--rule); }
+.oss__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.oss__card {
+  display: flex; flex-direction: column; gap: 12px;
+  padding: 24px; border: 1px solid var(--rule); border-radius: 12px;
+  background: linear-gradient(180deg, rgba(124,255,178,0.025), transparent 60%);
+  transition: border-color .25s, transform .25s;
+}
+.oss__card:hover { border-color: var(--green); transform: translateY(-3px); }
+.oss__top { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+.oss__repo { font-family: var(--font-mono); font-size: 12px; color: var(--ink-soft); }
+.oss__status {
+  font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 3px 10px; border-radius: 999px; border: 1px solid var(--rule); color: var(--ink-mute);
+}
+.oss__status--merged { color: #c4a8ff; background: rgba(137,87,229,0.15); border-color: rgba(137,87,229,0.5); }
+.oss__title { font-family: var(--font-display); font-weight: 400; font-size: clamp(20px, 2.2vw, 26px); line-height: 1.15; letter-spacing: -0.01em; }
+.oss__desc { color: var(--ink-soft); font-size: 14.5px; line-height: 1.6; flex: 1; }
+.oss__foot {
+  display: flex; align-items: center; gap: 16px; padding-top: 12px;
+  border-top: 1px dashed var(--ink-faint);
+  font-family: var(--font-mono); font-size: 11px; color: var(--ink-mute);
+}
+.oss__lang i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--c); margin-right: 6px; vertical-align: -1px; }
+.oss__go { margin-left: auto; color: var(--green); }
+@media (max-width: 720px) { .oss__grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -1496,7 +1527,7 @@ img, svg { max-width: 100%; display: block; }
             <p>
               I hold a Master&rsquo;s in Management Information Systems from Pace University and
               a Bachelor of Engineering from PVPPCOE, Mumbai. I am a Certified SAFe&reg; 6
-              Practitioner, an AWS Certified Solutions Architect, and a co-inventor on
+              Practitioner, a Google Cloud Certified Generative AI Leader, and a co-inventor on
               US&nbsp;Patent&nbsp;12,254,347 — the HPC Data Pipeline that became the foundation
               for how Regeneron moves cryo-electron microscopy and sequencing data into the cloud.
             </p>
@@ -1518,7 +1549,11 @@ img, svg { max-width: 100%; display: block; }
   <span class="t-key">"based"</span>:        <span class="t-str">"Somerset, NJ"</span>,
   <span class="t-key">"focus"</span>:        <span class="t-arr">[</span><span class="t-str">"HPC"</span>, <span class="t-str">"AI"</span>, <span class="t-str">"Data"</span>, <span class="t-str">"Cloud"</span><span class="t-arr">]</span>,
   <span class="t-key">"patent"</span>:       <span class="t-str">"US 12,254,347 B2"</span>,
-  <span class="t-key">"certs"</span>:        <span class="t-arr">[</span><span class="t-str">"GCP GenAI Leader"</span>, <span class="t-str">"NVIDIA AI Infra"</span>, <span class="t-str">"SAFe 6"</span>, <span class="t-str">"AWS SA"</span><span class="t-arr">]</span>,
+  <span class="t-key">"certs"</span>:        <span class="t-arr">[</span>
+    <span class="t-str">"GCP GenAI Leader"</span>, <span class="t-str">"NVIDIA AI Infra"</span>,
+    <span class="t-str">"SAFe 6"</span>, <span class="t-str">"MIT Agentic AI"</span>
+  <span class="t-arr">]</span>,
+  <span class="t-key">"oss"</span>:          <span class="t-arr">[</span><span class="t-str">"boltzgen"</span>, <span class="t-str">"netflix/aardvark"</span><span class="t-arr">]</span>,
   <span class="t-key">"users_served"</span>: <span class="t-str">"2000+ scientists"</span>,
   <span class="t-key">"data_scale"</span>:   <span class="t-str">"25+ PB"</span>,
   <span class="t-key">"status"</span>:       <span class="t-str">"shipping..."</span>
@@ -1867,7 +1902,7 @@ img, svg { max-width: 100%; display: block; }
           </div>
         </div>
         <p class="poster__note">
-          Presented at Regeneron&rsquo;s Digital & Technology Poster Day. The full poster is internal;
+          Presented at Regeneron&rsquo;s Global Development Poster Day. The full poster is internal;
           shown here as a redacted preview with the title in the clear.
         </p>
       </article>
@@ -2069,7 +2104,8 @@ img, svg { max-width: 100%; display: block; }
           <li><strong>Google Cloud</strong> · Certified Generative AI Leader <span>(2026)</span></li>
           <li><strong>NVIDIA</strong> · Certified Associate — AI Infrastructure &amp; Operations <span>(2026)</span></li>
           <li><strong>Certified SAFe&reg; 6</strong> · Practitioner</li>
-          <li><strong>AWS</strong> · Certified Solutions Architect</li>
+          <li><strong>MIT Sloan</strong> · Agentic AI Executive Certification <span>(2026)</span></li>
+          <li><strong>AWS</strong> · Certified Solutions Architect <span>(2016–2019)</span></li>
           <li><strong>Seqera</strong> · Hello Nextflow — Nextflow Training Week <span>(2026)</span></li>
           <li><strong>Posit Academy</strong> · Admin Training completion <span>(2026)</span></li>
           <li><strong>Courses</strong> · Ansible Essentials · Linux Command Line · Intro to R · DevOps CI/CD on AWS</li>
@@ -2203,6 +2239,33 @@ img, svg { max-width: 100%; display: block; }
           </ul>
         </article>
       </div>
+
+      <div class="oss">
+        <div class="oss__head">
+          <span class="oss__label">Open source</span>
+          <span class="oss__rule"></span>
+        </div>
+        <div class="oss__grid">
+          <a class="oss__card" href="https://github.com/HannesStark/boltzgen/pull/263" target="_blank" rel="noopener">
+            <div class="oss__top">
+              <span class="oss__repo">HannesStark/boltzgen</span>
+              <span class="oss__status oss__status--merged">Merged</span>
+            </div>
+            <h3 class="oss__title">Python 3.13 support for BoltzGen</h3>
+            <p class="oss__desc">Relaxed the NumPy and Numba version pins in BoltzGen, the open-source model for universal binder design, so it installs and runs on Python 3.13. The project now documents tested Python 3.11 and 3.13 dependency combinations.</p>
+            <div class="oss__foot"><span>PR #263</span><span class="oss__lang"><i style="--c:#3572A5"></i>Python</span><span class="oss__go">View PR ↗</span></div>
+          </a>
+          <a class="oss__card" href="https://github.com/Netflix-Skunkworks/aardvark/pull/112" target="_blank" rel="noopener">
+            <div class="oss__top">
+              <span class="oss__repo">Netflix-Skunkworks/aardvark</span>
+              <span class="oss__status">Contributor</span>
+            </div>
+            <h3 class="oss__title">Aardvark &mdash; Netflix&rsquo;s IAM Access Advisor API</h3>
+            <p class="oss__desc">Contributed to Aardvark, Netflix&rsquo;s open-source service that collects AWS IAM Access Advisor data across many accounts and serves it through a single API and caching layer.</p>
+            <div class="oss__foot"><span>PR #112</span><span class="oss__lang"><i style="--c:#3572A5"></i>Python</span><span class="oss__go">View PR ↗</span></div>
+          </a>
+        </div>
+      </div>
     </section>
 
     <section class="section section--contact" id="contact">
@@ -2307,7 +2370,7 @@ img, svg { max-width: 100%; display: block; }
 
   // ---------- Reveal on scroll ----------
   const targets = document.querySelectorAll(
-    '.section, .work__card, .timeline__item, .metric, .contact__link, .press, .pub, .talk, .poster, .shot'
+    '.section, .work__card, .timeline__item, .metric, .contact__link, .press, .pub, .talk, .poster, .shot, .oss__card'
   );
   targets.forEach((t) => t.classList.add('reveal'));
 
